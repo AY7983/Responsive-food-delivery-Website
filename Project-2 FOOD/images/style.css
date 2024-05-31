@@ -1,0 +1,275 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+}   
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+
+/* Navigation Bar:Logo and Image */
+#logo {
+    margin: 34px 45px;
+}
+
+#logo img {
+    margin: 10px 20px;
+    height: 60px;
+    width: 65px;
+
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+
+
+/* NavigationBar:List Styling */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: orangered;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.29;
+}
+
+#navbar ul li {
+    color: white;
+    list-style: none;
+    font-size: 29px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navbar ul li a {
+    /* display:block; */
+    padding: 3px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+
+    content: "";
+    background: url("./background2.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-size: 54px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Services Section */
+#services {
+
+    display: flex;
+    /* flex-direction: column; */
+    /* height: 300px; */
+    /* width: 300px; */
+    margin: 15px;
+}
+
+#services .box {
+    display: flex;
+    /* flex-direction:column; */
+    margin: 25px 55px;
+    margin-bottom: 20px;
+    padding: 10px 9px;
+    display: block;
+    border: 4px solid red;
+    border-radius: 30px;
+
+}
+
+#services.box img {
+    /* height: 800px; */
+    /* width: 800px; */
+    margin: 30px 45px;
+    display: block;
+
+}
+
+#services .box p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Clients Section */
+
+#client-section{
+   position: relative;
+}
+#client-section::before{
+  content: "";
+  position: absolute;
+  background: url('./background.jpeg') no-repeat center center/cover;
+  width: 100%;
+  height:100%;
+  z-index:-1;
+  opacity:0.4;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients  .box1 img{
+    heigt:autox;
+    width:150px;
+    padding:10px;
+    margin:17px 8px;
+
+
+}
+#clients  .box2 img{
+    height:auto;
+    width:150px;
+    padding:10px;
+    margin:17px 8px;
+
+
+}
+#clients  .box3 img{
+    height:auto;
+    width:150px;
+    padding:10px;
+    margin:17px 8px;
+
+
+}
+#clients  .box4 img{
+    height:auto;
+    width:150px;
+    padding:10px;
+    margin:17px 8px;
+
+
+}
+
+
+.client-item {
+    padding:40px;
+}
+
+/* Contact section */
+#contact{
+    position:relative;
+
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:800px;
+    z-index:-1;
+    opacity:0.9;
+    background: url('./contact.jpg') no-repeat center center/cover;
+}
+footer{
+    background: black;
+    color:white;
+    padding:9px 20px;
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius:9px;
+    font-size:1.1rem;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 4px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
